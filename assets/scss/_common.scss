@@ -1,0 +1,31 @@
+/*==============
+Common
+==============*/
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    background: #fafafa;
+    color: #2f3136;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.5;
+}
+
+ul{
+    padding: 0;
+    padding-inline-start: 0px;
+    list-style: none;
+}
+img{
+    height: auto;
+    max-width: 100%;
+}

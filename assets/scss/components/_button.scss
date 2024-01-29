@@ -1,0 +1,44 @@
+// ---------------------------
+// Button
+// ---------------------------
+.btn-single-cart {
+    border: 0;
+    border-radius: 3px;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    cursor: pointer;
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: calc(40% - 10px);
+    margin: 0 5px !important;
+    float: none !important;
+    height: 50px;
+    img{
+        max-width: 25px;
+        height: auto;
+        margin-right: 5px; 
+    }
+}
+
+.btn-add-cart {
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+    &:hover,&:active,&:focus{
+        background: #000;
+        color: #fff;
+    }
+}
+
+.btn-buy-now {
+    background: #ff4343;
+    color: #FFF;
+    &:hover,&:active,&:focus{
+        background: #ff4343;
+        color: #FFF;
+    }
+}

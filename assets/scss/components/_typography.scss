@@ -1,0 +1,37 @@
+// ---------------------------
+// Typography
+// ---------------------------
+.fz-30{
+    font-size: 1.3em;
+    @include breakpoint(sm){
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+.fz-25{
+    font-size: 20px;
+    @include breakpoint(sm){
+        font-size: 25px;
+    }
+}
+.fz-15{
+    font-size: 15px;
+}
+.fz-18{
+    font-size: 16px;
+    @include breakpoint(sm){
+        font-size: 18px;
+    }
+}
+.font-bold{
+    font-weight: 600;
+}
+.font-weight-bold {
+    font-weight: 700;
+}
+.clr-red{
+    color: $clr-red;
+}
+.bg-danger {
+    background-color: #dc3545;
+}
