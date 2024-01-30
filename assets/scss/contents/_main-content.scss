@@ -6,16 +6,8 @@
     max-width: 90%;
     margin: 0 auto;
 }
+//block
 
-.block-slider-product{
-    float: left;
-    width: 48%;
-}
-.block-summary{
-    float: right;
-    width: 48%;
-    clear: none;
-}
 //sate
 .block-product-rating{
     display: flex;
@@ -44,10 +36,8 @@
     display: inline-block;
     margin-bottom: 10px;
     color: #000;
-    font-size: 25px;
     .price{
         .price-small{
-            font-size: 17px;
             opacity: .5;
         }  
     }

@@ -1,6 +1,11 @@
 // ---------------------------
 // Typography
 // ---------------------------
+:root {
+    --wvs-single-product-item-width: 30px;
+    --wvs-single-product-item-height: 30px;
+    --wvs-single-product-item-font-size: 16px;
+}
 .fz-30{
     font-size: 1.3em;
     @include breakpoint(sm){
@@ -14,8 +19,17 @@
         font-size: 25px;
     }
 }
+.fz-12{
+    font-size: 12px;
+}
 .fz-15{
     font-size: 15px;
+}
+.fz-16{
+    font-size: 16px;
+}
+.fz-17{
+    font-size: 17px
 }
 .fz-18{
     font-size: 16px;
@@ -31,6 +45,9 @@
 }
 .clr-red{
     color: $clr-red;
+}
+.clr-black{
+    color: $clr-black;
 }
 .bg-danger {
     background-color: #dc3545;

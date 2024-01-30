@@ -195,8 +195,10 @@ a#pull {
 .text-price {
   display: inline-block;
   margin-bottom: 10px;
-  color: #000; }
+  color: #000;
+  font-size: 25px; }
   .text-price .price .price-small {
+    font-size: 17px;
     opacity: .5; }
   .text-price .price-big {
     font-weight: bold; }
@@ -284,20 +286,18 @@ a#pull {
   width: 100%;
   float: left;
   background: #242424;
-  color: #fff;
-  margin-top: 25px; }
+  color: #fff; }
 
 .footer-column-left {
   padding-right: 10px;
   max-width: 50%; }
 
 .footer-column-three {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  @media only screen and (min-width: 768px) {
-    .footer-column-three {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
+  display: inline-block;
+  float: left;
+  width: 100%;
+  max-width: 33%;
+  padding: 50px 0; }
 
 footer a {
   text-decoration: none;
@@ -317,11 +317,6 @@ footer .contact-btn {
   border-color: transparent;
   border-radius: 4px; }
 
-:root {
-  --wvs-single-product-item-width: 30px;
-  --wvs-single-product-item-height: 30px;
-  --wvs-single-product-item-font-size: 16px; }
-
 .fz-30 {
   font-size: 1.3em; }
   @media only screen and (min-width: 576px) {
@@ -335,17 +330,8 @@ footer .contact-btn {
     .fz-25 {
       font-size: 25px; } }
 
-.fz-12 {
-  font-size: 12px; }
-
 .fz-15 {
   font-size: 15px; }
-
-.fz-16 {
-  font-size: 16px; }
-
-.fz-17 {
-  font-size: 17px; }
 
 .fz-18 {
   font-size: 16px; }
@@ -362,109 +348,8 @@ footer .contact-btn {
 .clr-red {
   color: #ff4343; }
 
-.clr-black {
-  color: #000; }
-
 .bg-danger {
   background-color: #dc3545; }
-
-.check-list-quantity {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .check-list-quantity li {
-    min-width: var(--wvs-single-product-item-width);
-    width: auto;
-    font-size: 13px;
-    line-height: 16px;
-    padding: 10px;
-    border: 1px solid #dbdbdb;
-    box-shadow: none;
-    text-align: center;
-    color: #363636;
-    height: auto;
-    border-radius: 4px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: 4px;
-    cursor: pointer; }
-    .check-list-quantity li.selected {
-      border-color: #04a1c6;
-      border-width: 2px;
-      border-radius: 3px;
-      color: #000; }
-      .check-list-quantity li.selected .conner-checked-style {
-        display: inline-block; }
-
-.conner-checked-style {
-  display: none;
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  height: 28px;
-  width: 28px; }
-
-.block-product-card {
-  margin-bottom: 2.992em; }
-
-.block-product-link {
-  text-decoration: none;
-  color: #000; }
-  .block-product-link img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 0 1em;
-    box-shadow: none; }
-  .block-product-link h2 {
-    padding: 0.5em 0;
-    margin: 0;
-    font-size: 1em; }
-  .block-product-link .price {
-    color: #2f3136;
-    font-size: 1em; }
-
-.page-pagination-numbers {
-  margin: 1px;
-  list-style: none;
-  flex-wrap: wrap; }
-  .page-pagination-numbers li {
-    margin-top: 8px; }
-    .page-pagination-numbers li span,
-    .page-pagination-numbers li a {
-      border: 1px solid #eee;
-      color: #000;
-      margin: 0 5px;
-      background: #fff;
-      padding: 10px 15px;
-      line-height: 1;
-      font-size: 1em;
-      font-weight: 400;
-      text-decoration: none;
-      min-width: 1em;
-      display: block; }
-      .page-pagination-numbers li span:hover, .page-pagination-numbers li span:focus, .page-pagination-numbers li span:active,
-      .page-pagination-numbers li a:hover,
-      .page-pagination-numbers li a:focus,
-      .page-pagination-numbers li a:active {
-        border: 1px solid #eee;
-        color: #000;
-        background: #fff; }
-      .page-pagination-numbers li span.current,
-      .page-pagination-numbers li a.current {
-        opacity: .8;
-        background: #000;
-        color: #fff; }
-
-.title-quantity {
-  font-size: .85em;
-  font-weight: 700;
-  margin: 0 2px; }
 
 .btn-single-cart {
   border: 0;
