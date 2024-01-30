@@ -1,4 +1,4 @@
-jQuery(document).ready(function () {
+jQuery(document).ready(function ($) {
   // menu
   $('.sidebar-nav-icon').on('click', function () {
     $('#sidebar-menu').toggleClass('show');
@@ -11,6 +11,26 @@ jQuery(document).ready(function () {
   $('.check-list-quantity li').on('click', function () {
     $(this).toggleClass('selected');
   });
+  $('.go-show-mini-cart').on('click', function () {
+    $('#cart-sidebar').toggleClass('show');
+  });
+  $('.cart-sidebar-header button.close').on('click', function () {
+    $('#cart-sidebar').removeClass('show');
+  });
+  $(document).on('scroll', function () {
+    if ($('#description-content').length > 0) {
+        let offsetTop = $('#description-content').offset().top;
+        if ($(this).scrollTop() >= offsetTop) {
+            $('#buy-now-btm').fadeIn();
+        } else
+            $('#buy-now-btm').fadeOut();
+    }
+});
+  $('#buy-now-btm').on('click', function () {
+    $('html,body').animate({
+        scrollTop: $('#sales-countdown').offset().top + 10
+    }, 500)
+});
   if ($('.slider-for').length > 0) {
     $('.slider-for').slick({
       slidesToShow: 1,
@@ -55,45 +75,25 @@ jQuery(document).ready(function () {
       $('#sales-countdown span').attr('data-time', distance - 1)
     }, 1000);
   }
-});
-(function () {
+  (function quantityProducts() {
+    var $quantityArrowMinus = $(".quantity-arrow-minus");
+    var $quantityArrowPlus = $(".quantity-arrow-plus");
+    var $quantityNum = $(".input-number");
 
-  window.inputNumber = function (el) {
+    $quantityArrowMinus.click(quantityMinus);
+    $quantityArrowPlus.click(quantityPlus);
 
-    var min = el.attr('min') || false;
-    var max = el.attr('max') || false;
-
-    var els = {};
-
-    els.dec = el.prev();
-    els.inc = el.next();
-
-    el.each(function () {
-      init($(this));
-    });
-
-    function init(el) {
-
-      els.dec.on('click', decrement);
-      els.inc.on('click', increment);
-
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if (!min || value >= min) {
-          el[0].value = value;
-        }
-      }
-
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if (!max || value <= max) {
-          el[0].value = value++;
-        }
+    function quantityMinus() {
+      if ($quantityNum.val() > 1) {
+        $quantityNum.val(+$quantityNum.val() - 1);
       }
     }
-  }
-})();
 
-inputNumber($('.input-number'));
+    function quantityPlus() {
+      $quantityNum.val(+$quantityNum.val() + 1);
+    }
+  })();
+  
+});
+
+

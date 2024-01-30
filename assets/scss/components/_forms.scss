@@ -7,8 +7,46 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
 input[type="number"] {
-    -moz-appearance: textfield;
-    padding: 10px;
-    text-align: center;
+  -moz-appearance: textfield;
+  padding: 10px;
+  text-align: center;
+}
+
+.block-quantity {
+  margin: 0 4px 0 0;
+  width: 20%;
+  height: 50px;
+  border-radius: 3px;
+  border: solid 1px #DDD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  cursor: pointer;
+  padding: 0;
+}
+
+.input-number {
+  padding: 10px 0;
+  display: inline-block;
+  height: 100%;
+  border: 0;
+  text-align: center;
+  width: calc(100% - 70px);
+}
+
+.button-click {
+  // line-height: 30px;
+  // width: 35px;
+  display: inline-block;
+}
+
+.cart-sidebar-content {
+  .block-quantity {
+    height: 35px;
+    overflow: hidden;
+    min-width: 120px;
+  }
 }

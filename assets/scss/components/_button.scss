@@ -1,9 +1,17 @@
 // ---------------------------
 // Button
 // ---------------------------
-.btn-single-cart {
-    border: 0;
+.btn{
     border-radius: 3px;
+    border: 0;
+    font-weight: normal;
+    &:hover,&:focus,&:active{
+        border: none;
+        outline: none;
+    }
+}
+.btn-single-cart {
+    
     text-decoration: none;
     vertical-align: middle;
     padding-bottom: 11px;
@@ -31,6 +39,7 @@
     &:hover,&:active,&:focus{
         background: #000;
         color: #fff;
+        opacity: 0.85;
     }
 }
 
@@ -40,5 +49,31 @@
     &:hover,&:active,&:focus{
         background: #ff4343;
         color: #FFF;
+        opacity: 0.85;
+    }
+}
+.btn-checkout-button{
+    display: block;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #FFF;
+    background: #000;
+    text-decoration: none;
+    &:hover,&:active,&:focus{
+        background: #000;
+        color: #FFF;
+        opacity: 0.85;
+    }
+}
+.button-click{
+    button{
+        border: none;
+        background: transparent;
+        &:hover,&:focus,&:active{
+            border: none;
+            outline: none;
+        }
     }
 }
