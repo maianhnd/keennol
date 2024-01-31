@@ -386,23 +386,55 @@
                                         </div>
                                     </div>
 
-                                    <button class="btn btn-pay-card" type="submit">
+                                    <button class="btn btn-pay-card mt-2" type="submit" data-toggle="modal"
+                                        data-target="#ModalOpt">
                                         <img src="assets/img/icons/icon-pay.svg" alt="" class="paypal-logo-card mr-2">
                                         <span class="paypal-button-text">Debit or Credit Card</span>
                                     </button>
                                 </div>
 
                                 <div class="checkout-footer text-center mt-4 mt-lg-5">
+                                    
                                     <div class="has-text-centered mb-2">All transactions are secure and encrypted by
                                     </div>
-                                    <figure class="trust-badge-footer image"><img
-                                            src="assets/img/trustbadge_footer.png" alt="">
+                                    <figure class="trust-badge-footer image"><img src="assets/img/trustbadge_footer.png"
+                                            alt="">
                                     </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="ModalOpt" tabindex="-1" role="dialog" aria-labelledby="ModalOptLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalOptLabel">Nhập mã OPT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-otp">
+                        <div class="form-group">
+                            <label for="validationOtp">Mã OTP</label>
+                            <input type="number" class="form-control is-invalid" id="validationOpt"
+                                placeholder="Mã OTP" value="" required>
+                            <div class="invalid-feedback">
+                                required field.
+                            </div>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-otp">Send OTP</button>
+                </div>
             </div>
         </div>
     </div>

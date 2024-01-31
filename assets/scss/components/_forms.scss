@@ -66,3 +66,8 @@ input[type="number"] {
   color: $clr-black;
   @include placeholder(#a3a0a0);
 }
+.modal-otp{
+  input[type="number"] {
+    text-align: left;
+  }
+}
