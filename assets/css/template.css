@@ -1019,4 +1019,7 @@ a.remove {
   .product-name a:hover {
     color: #0056b3; }
 
+.cart-totals table th {
+  width: 35%; }
+
 /*# sourceMappingURL=template.css.map */
