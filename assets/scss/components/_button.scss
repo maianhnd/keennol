@@ -1,17 +1,22 @@
 // ---------------------------
 // Button
 // ---------------------------
-.btn{
+
+.btn {
     border-radius: 3px;
     border: 0;
     font-weight: normal;
-    &:hover,&:focus,&:active{
+
+    &:hover,
+    &:focus,
+    &:active {
         border: none;
         outline: none;
     }
 }
+
 .btn-single-cart {
-    
+
     text-decoration: none;
     vertical-align: middle;
     padding-bottom: 11px;
@@ -25,10 +30,11 @@
     margin: 0 5px !important;
     float: none !important;
     height: 50px;
-    img{
+
+    img {
         max-width: 25px;
         height: auto;
-        margin-right: 5px; 
+        margin-right: 5px;
     }
 }
 
@@ -36,7 +42,10 @@
     background: #000;
     color: #fff;
     font-weight: normal;
-    &:hover,&:active,&:focus{
+
+    &:hover,
+    &:active,
+    &:focus {
         background: #000;
         color: #fff;
         opacity: 0.85;
@@ -46,13 +55,17 @@
 .btn-buy-now {
     background: #ff4343;
     color: #FFF;
-    &:hover,&:active,&:focus{
+
+    &:hover,
+    &:active,
+    &:focus {
         background: #ff4343;
         color: #FFF;
         opacity: 0.85;
     }
 }
-.btn-checkout-button{
+
+.btn-checkout-button {
     display: block;
     padding: 15px;
     margin-top: 20px;
@@ -61,19 +74,44 @@
     color: #FFF;
     background: #000;
     text-decoration: none;
-    &:hover,&:active,&:focus{
+
+    &:hover,
+    &:active,
+    &:focus {
         background: #000;
         color: #FFF;
         opacity: 0.85;
     }
 }
-.button-click{
-    button{
+
+.button-click {
+    button {
         border: none;
         background: transparent;
-        &:hover,&:focus,&:active{
+
+        &:hover,
+        &:focus,
+        &:active {
             border: none;
             outline: none;
         }
+    }
+}
+
+.btn-pay-card {
+    height: 55px;
+    vertical-align: top;
+    min-height: 40px;
+    font-size: 20px;
+    background: #2C2E2F;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #2C2E2F;
+        color: #fff;
     }
 }

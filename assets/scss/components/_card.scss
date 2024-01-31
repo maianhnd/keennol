@@ -6,7 +6,6 @@
 }
 .block-product-link{
     text-decoration: none;
-    color: #000;
     img {
         width: 100%;
         height: auto;
@@ -16,8 +15,13 @@
     }
     h2{
         padding: 0.5em 0;
-    margin: 0;
-    font-size: 1em;
+        margin: 0;
+        font-size: 1em;
+        &.clr-black{
+            &:hover,&:active,&:focus{
+                color: #0056b3;
+            }
+        }
     }
     .price {
         color: #2f3136;

@@ -67,3 +67,43 @@
         margin-right: auto;
     }
 }
+.review-order-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0 50px;
+    .logo{
+        img{
+            max-width: 120px;
+            height: auto;
+        }
+    }
+}
+.img-trusted{
+    height: 40px;
+    width: auto;
+}
+.order-summary-content{
+    h4{
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 640px) {
+            display: none;
+        }
+    }
+    .back-to-cart{
+        font-size: 15px;
+        a{
+            color: #666;
+        }
+    }
+}
+.back-to-cart{
+    a{
+        &:hover,&:active{
+            text-decoration: underline;
+        }
+    }
+}
