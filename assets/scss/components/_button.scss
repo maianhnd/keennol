@@ -108,6 +108,7 @@
     width: 100%;
     text-align: center;
     border-radius: 4px;
+
     &:hover,
     &:focus,
     &:active {
@@ -115,7 +116,8 @@
         color: #fff;
     }
 }
-.btn-otp{
+
+.btn-otp {
     height: 55px;
     vertical-align: top;
     min-height: 40px;
@@ -125,10 +127,33 @@
     min-width: 250px;
     text-align: center;
     border-radius: 4px;
+
     &:hover,
     &:focus,
     &:active {
         background: #ffc439;
         color: #2C2E2F;
+    }
+}
+
+.btn-update-cart {
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.618em 1em;
+
+    &:disabled[disabled] {
+        cursor: not-allowed;
+        color: #fff;
+        background: #000;
+        opacity: .5;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: .5;
+        color: #fff;
+        background: #000;
     }
 }

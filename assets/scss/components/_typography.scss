@@ -13,6 +13,9 @@
         line-height: 36px;
     }
 }
+.fz-36{
+    font-size: 36px;
+}
 .fz-25{
     font-size: 20px;
     @include breakpoint(sm){

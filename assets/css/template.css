@@ -380,6 +380,9 @@ footer .contact-btn {
       font-size: 30px;
       line-height: 36px; } }
 
+.fz-36 {
+  font-size: 36px; }
+
 .fz-25 {
   font-size: 20px; }
   @media only screen and (min-width: 576px) {
@@ -670,6 +673,21 @@ footer .contact-btn {
     background: #ffc439;
     color: #2C2E2F; }
 
+.btn-update-cart {
+  background: #000;
+  border-radius: 3px;
+  color: #fff;
+  padding: 0.618em 1em; }
+  .btn-update-cart:disabled[disabled] {
+    cursor: not-allowed;
+    color: #fff;
+    background: #000;
+    opacity: .5; }
+  .btn-update-cart:hover, .btn-update-cart:active, .btn-update-cart:focus {
+    opacity: .5;
+    color: #fff;
+    background: #000; }
+
 #cart-sidebar {
   position: fixed;
   top: 0;
@@ -959,7 +977,7 @@ input[type="number"] {
   .shop_table tr {
     border-color: rgba(0, 0, 0, 0.04); }
     .shop_table tr td {
-      font-size: 14px;
+      font-size: 16px;
       vertical-align: top;
       border: 0;
       padding: 5px 10px;
@@ -970,5 +988,35 @@ input[type="number"] {
         font-size: 14px; }
         .shop_table tr td .back-to-cart a {
           color: #007bff; }
+
+.product-thumbnail {
+  min-width: 50px; }
+
+.table-cart thead th {
+  border-bottom: solid 2px #DDD;
+  font-weight: bold;
+  padding: 5px 10px; }
+.table-cart tfoot td {
+  border-top: solid 1px #DDD !important; }
+.table-cart .actions {
+  text-align: right; }
+
+a.remove {
+  display: block;
+  font-size: 1.5em;
+  height: 1em;
+  width: 1em;
+  text-align: center;
+  line-height: 1;
+  border-radius: 100%;
+  color: red;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0; }
+
+.product-name a {
+  color: #000; }
+  .product-name a:hover {
+    color: #0056b3; }
 
 /*# sourceMappingURL=template.css.map */
