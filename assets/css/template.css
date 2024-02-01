@@ -23,11 +23,6 @@ h5,
 h6 {
   line-height: 1.5; }
 
-ul {
-  padding: 0;
-  padding-inline-start: 0px;
-  list-style: none; }
-
 img {
   height: auto;
   max-width: 100%; }
@@ -254,6 +249,21 @@ a#pull {
 .back-to-cart a:hover, .back-to-cart a:active {
   text-decoration: underline; }
 
+.entry-content p {
+  font-size: 15px;
+  margin: 0 0 1.5em; }
+.entry-content h3 {
+  font-size: 21px; }
+.entry-content h4 {
+  font-size: 19px; }
+.entry-content a {
+  color: #000; }
+  .entry-content a:hover {
+    color: #0056b3;
+    text-decoration: underline; }
+.entry-content ul li {
+  font-size: 16px; }
+
 #bottom-actions {
   bottom: 24px;
   right: 12px;
@@ -381,7 +391,10 @@ footer .contact-btn {
       line-height: 36px; } }
 
 .fz-36 {
-  font-size: 36px; }
+  font-size: 20px; }
+  @media only screen and (min-width: 576px) {
+    .fz-36 {
+      font-size: 36px; } }
 
 .fz-25 {
   font-size: 20px; }
