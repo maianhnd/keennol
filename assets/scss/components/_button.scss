@@ -16,25 +16,26 @@
 }
 
 .btn-single-cart {
-
     text-decoration: none;
     vertical-align: middle;
     padding-bottom: 11px;
     padding-top: 11px;
     cursor: pointer;
     position: relative;
-    display: flex !important;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(40% - 10px);
-    margin: 0 5px !important;
-    float: none !important;
+    width: 100%;
+    margin: 10px 0;
     height: 50px;
-
     img {
         max-width: 25px;
         height: auto;
         margin-right: 5px;
+    }
+    @include breakpoint(sm){
+        width: calc(40% - 10px);
+        margin: 0 5px;
     }
 }
 
@@ -128,6 +129,17 @@
     text-align: center;
     border-radius: 4px;
 
+    &:hover,
+    &:focus,
+    &:active {
+        background: #ffc439;
+        color: #2C2E2F;
+    }
+}
+.btn-pay-pal{
+    background: #ffc439;
+    color: #2C2E2F;
+    width: 100%;
     &:hover,
     &:focus,
     &:active {

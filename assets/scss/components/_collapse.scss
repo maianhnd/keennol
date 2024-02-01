@@ -19,16 +19,19 @@
         color: rgb(113, 113, 113);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
         display: block;
         margin: 0px -15px 16px;
         padding: 0px 15px;
     }
 }
 .wapper-collapse{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+    @include breakpoint(sm){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 .order-summary.show .chevron-up, .order-summary-header .chevron-down {
     display: none;
@@ -48,7 +51,7 @@
     .chevron-up{
         display: block;
     }
-    @media (max-width: 640px){
+    @media (max-width: 767px){
         .order-summary-content table.shop_table {
             display: none;
         }

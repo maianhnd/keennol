@@ -48,7 +48,8 @@
                     autocomplete="off" action="https://keennol.com/checkout/" enctype="multipart/form-data"
                     novalidate="novalidate">
                     <div class="row">
-                        <div class="col-12 col-sm-6 bg-white-2">
+                        <!-- left-cart -->
+                        <div class="col-12 col-md-6 bg-white-2">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-9 offset-lg-2">
                                     <div class="review-order-header">
@@ -60,20 +61,21 @@
                                     <div class="order-summary">
                                         <div class="order-summary-header">
                                             <div class="wapper-collapse">
-                                                <div class="left-cart d-flex">
+                                                <div class="left-cart d-flex align-items-center">
                                                     <img src="assets/img/icons/cart_grey.svg">
                                                     <span class="chevron-up">Show order summary</span>
                                                     <span class="chevron-down">Hide order summary</span>
-                                                </div>
+                                                    <img src="assets/img/icons/chevron_down.svg" class="chevron-up">
+                                                    <img src="assets/img/icons/chevron_up.svg" class="chevron-down">
 
-                                                <img src="assets/img/icons/chevron_down.svg" class="chevron-up">
-                                                <img src="assets/img/icons/chevron_up.svg" class="chevron-down">
+                                                </div>
+                                                <div id="header-cart-total" class="float-right d-inline-block">
+                                                    <strong class="mr-2">Total</strong>
+                                                    <span class="price-amount amount"><bdi><span
+                                                                class="price-currencysymbol">$</span>439.35</bdi></span>
+                                                </div>
                                             </div>
-                                            <div id="header-cart-total" class="float-right d-inline-block">
-                                                <strong class="mr-2">Total</strong>
-                                                <span class="price-amount amount"><bdi><span
-                                                            class="price-currencysymbol">$</span>439.35</bdi></span>
-                                            </div>
+                                            
                                         </div>
                                         <div class="order-summary-content">
                                             <h4>
@@ -312,8 +314,9 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-12 col-sm-6 block-form-checkout">
+                        <!-- end -->
+                        <!-- form-cart -->
+                        <div class="col-12 col-md-6 block-form-checkout">
                             <div class="col-sm-12 col-lg-9 offset-lg-1">
                                 <div class="form-checkout">
                                     <h2 class="fz-25">Shipping address</h2>
@@ -392,9 +395,7 @@
                                         <span class="paypal-button-text">Debit or Credit Card</span>
                                     </button>
                                 </div>
-
                                 <div class="checkout-footer text-center mt-4 mt-lg-5">
-                                    
                                     <div class="has-text-centered mb-2">All transactions are secure and encrypted by
                                     </div>
                                     <figure class="trust-badge-footer image"><img src="assets/img/trustbadge_footer.png"
@@ -403,6 +404,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- end -->
                     </div>
                 </form>
             </div>

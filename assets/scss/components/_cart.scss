@@ -8,12 +8,14 @@
     bottom: 0;
     max-width: 480px;
     background: #FFF;
-    padding: 30px;
+    padding: 16px;
     min-height: 100vh;
     overflow-y: auto;
     z-index: 999999;
     display: none;
-    
+    @include breakpoint(md){
+        padding: 30px;
+    }
     .item-qty {
         margin: 15px 0 20px;
         display: flex;
